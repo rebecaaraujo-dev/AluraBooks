@@ -1,0 +1,133 @@
+.carousel_titulo{
+    color: var(--color-primary);
+    background-color: var(--color-terciary);
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 1.15;
+    font-weight: 700;
+    padding: 1em 0 0.5em 0;
+}
+
+.swiper-slide img {
+    width: 100%;
+}
+
+.swiper-button-prev, .swiper-button-next {
+    display: none;
+}
+
+.swiper-pagination{
+    position: initial;
+    margin: .5em 0 1em 0;
+}
+
+.card {
+    background: var(--color-terciary);
+    box-shadow: 0px 4px 4px rgba(0,0,0,0.25);
+    border-radius: 0.6em;
+    margin: 1em;
+    padding: 1em;
+}
+
+.card_descricao {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1em;
+}
+
+.card_botoes{
+    display: flex;
+    justify-content: space-between;
+}
+
+.descricao_classificacao {
+    margin-bottom: 1em;
+}
+
+.descricao_titulo {
+    color: var(--color-primary);
+    font-weight: 700;
+}
+
+.descricao_titulo-livro {
+    color: var(--color-secondary);
+    font-size: 1.15rem;
+    font-weight: 700;
+    margin: 1em 0;
+}
+
+.descricao_texto {
+    font-size: .85rem;
+}
+
+.descricao_imagem {
+    margin-left: 1.5em;
+}
+
+.botoes {
+    display: flex;
+    transform: scale(.8);
+}
+
+.botoes_item {
+    margin: 0em 2em 0 0;
+}
+
+.botoes_ancora {
+    background-color: var(--color-primary);
+    padding: 1em 2.2em;
+    color: var(--color-terciary);
+    font-weight: 700;
+    text-decoration: none;
+}
+
+@media screen and (min-width: 1024px) {
+    .carousel_titulo {
+        font-size: 1.5rem;
+    }
+
+    .swiper-pagination {
+        margin: 2em 0 3em 0;
+    }
+
+    .swiper {
+        width: 60%;
+    }
+
+    .swiper-button-prev, .swiper-button-next {
+        display: block;
+        top: 60%;
+    }
+
+    .card {
+        width: 40%;
+        margin: 2em auto;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    .carousel_container{
+        display: flex;
+        margin: 0 10vw 3em 10vw;
+        align-items: center;
+    }
+
+    .swiper-pagination{
+        position: initial;
+        margin: 1em 0;
+    }
+
+    .descricao_titulo{
+        font-size: 1.85rem;
+    }
+
+    .descricao_texto{
+        font-size: 1rem;
+        margin-right: 5em;
+    }
+
+    .card {
+        width: 70%;
+        margin: 2em 0 0 3em;
+    }
+}
